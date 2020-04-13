@@ -20,7 +20,7 @@ public class HelloController {
      */
     @RequestMapping(value = "hello")
     @ControllerWebLog(name = "hello", isSaved = true)
-    public String getHello(String arg1, int arg2) {
+    public String getHello(String arg1, Integer arg2) {
         log.info("控制层获得参数：" + arg1);
         log.info("控制层获得参数：" + arg2);
         // 休眠，模拟接口耗时
