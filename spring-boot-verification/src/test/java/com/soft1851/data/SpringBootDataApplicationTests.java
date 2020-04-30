@@ -1,10 +1,10 @@
-package com.soft1851.spring.verification;
+package com.soft1851.data;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootVerificationApplicationTests {
+class SpringBootDataApplicationTests {
 
     @Test
     void contextLoads() {

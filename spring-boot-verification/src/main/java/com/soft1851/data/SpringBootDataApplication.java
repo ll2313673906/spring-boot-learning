@@ -1,13 +1,13 @@
-package com.soft1851.spring.verification;
+package com.soft1851.data;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootVerificationApplication {
+public class SpringBootDataApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootVerificationApplication.class, args);
+        SpringApplication.run(SpringBootDataApplication.class, args);
     }
 
 }
