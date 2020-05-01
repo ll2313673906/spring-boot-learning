@@ -1,22 +1,14 @@
-package com.soft1851.data.service;
+package com.soft851.springboot.validator.service;
 
-import com.soft1851.data.entity.Person;
+import com.soft851.springboot.validator.entity.Person;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import javax.annotation.Resource;
 import javax.validation.*;
-
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-/**
- * @Author: fwt
- * @Date: 2020/4/30 16:33
- * @Description:
- */
 @SpringBootTest
 class PersonServiceTest {
     @Resource
@@ -28,10 +20,12 @@ class PersonServiceTest {
         Person person= new Person();
         person.setId("123");
         person.setName("soft1851");
-        person.setAge(11);
-        person.setPhone("13800001111");
+        person.setAge(18);
+        person.setPhone("13111293508");
         person.setEmail("soft1851@qq.com");
-        person.setSex("男");
+        person.setSex("Woman");
+        person.setRegion("China");
+        person.setPhoneNumber("13111293508");
         personService.validatePerson(person);
     }
 
@@ -44,6 +38,8 @@ class PersonServiceTest {
         person.setId("123");
         person.setSex("Man22");
         person.setEmail("abc");
+        person.setRegion("China");
+        person.setPhoneNumber("13111293508");
         //对参数进行校验，得到一组结果
         Set<ConstraintViolation<Person>> violations = validator.validate(person);
         for (ConstraintViolation<Person> constraintViolation :violations){

@@ -1,17 +1,12 @@
-package com.soft1851.data.service;
+package com.soft851.springboot.validator.service;
 
-import com.soft1851.data.entity.Person;
+import com.soft851.springboot.validator.entity.Person;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
 import javax.validation.Valid;
 
-/**
- * @Author: fwt
- * @Date: 2020/4/30 16:32
- * @Description:
- */
 @Service
 @Validated@Slf4j
 public class PersonService {

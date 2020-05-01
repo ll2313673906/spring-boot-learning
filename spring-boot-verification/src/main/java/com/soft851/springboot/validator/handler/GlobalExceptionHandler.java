@@ -1,6 +1,6 @@
-package com.soft1851.data.handler;
+package com.soft851.springboot.validator.handler;
 
-import com.soft1851.data.controller.PersonController;
+import com.soft851.springboot.validator.controller.PersonController;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -12,11 +12,6 @@ import javax.validation.ConstraintViolationException;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @Author: fwt
- * @Date: 2020/4/30 15:07
- * @Description:
- */
 @ControllerAdvice(assignableTypes = {PersonController.class})
 public class GlobalExceptionHandler {
     @ExceptionHandler(MethodArgumentNotValidException.class)

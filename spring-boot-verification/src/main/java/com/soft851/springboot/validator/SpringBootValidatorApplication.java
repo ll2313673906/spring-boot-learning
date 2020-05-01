@@ -1,13 +1,13 @@
-package com.soft1851.data;
+package com.soft851.springboot.validator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootDataApplication {
+public class SpringBootValidatorApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDataApplication.class, args);
+        SpringApplication.run(SpringBootValidatorApplication.class, args);
     }
 
 }

@@ -1,15 +1,10 @@
-package com.soft1851.data.validator;
+package com.soft851.springboot.validator.validator;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @Author: fwt
- * @Date: 2020/4/30 17:41
- * @Description:
- */
 public class PhoneNumberValidator implements ConstraintValidator<PhoneNumber,String > {
     @Override
     public boolean isValid(String number, ConstraintValidatorContext constraintValidatorContext){
